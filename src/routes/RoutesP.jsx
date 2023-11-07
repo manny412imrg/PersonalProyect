@@ -10,6 +10,7 @@ import RootLayout from '../layout/RootLayout'
 import Help from '../pages/Help'
 import Faq from '../pages/help/Faq'
 import Contact from '../pages/help/Contact'
+import { NotFount } from '../pages/NotFount'
 
 
 const router = createBrowserRouter(
@@ -22,6 +23,7 @@ const router = createBrowserRouter(
         <Route path='faq'element={<Faq/>}/>
         <Route path='contact'element={<Contact/>}/>
       </Route >
+      <Route path='*' element={<NotFount/>}/>
     </Route>
   ))
 
