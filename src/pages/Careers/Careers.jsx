@@ -8,7 +8,7 @@ export default function Careers() {
         <p>Hola Mundo desde careers</p>
         {careers.map(career => (
             <p key={career.id} to="/">
-                <Link>{career.equipment}</Link>
+                <Link to={career.id.toString()}>{career.equipment}</Link>
                 <p>Made for {career.brand}</p>
             </p>
         ))}
