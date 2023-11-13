@@ -30,13 +30,14 @@ const router = createBrowserRouter(
         <Route 
           index 
           element={<Careers/>}
-          loader={careersLoader}/>
+          loader={careersLoader}
+        />
+        <Route
+          path=":id"
+          element={<CareerDetail/>}
+        />
       </Route >
-      <Route path='*' element={<NotFount/>}/>
-      <Route
-        path=":id"
-        element={<CareerDetail/>}
-      />
+        <Route path='*' element={<NotFount/>}/>
     </Route>
   ))
 
